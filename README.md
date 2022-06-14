@@ -75,7 +75,7 @@ _Note: Above test results might(not) vary._
 
 **This device tree can be used to build twrp for Umidigi Power 3 (Power_3)**
 
-This file was tested and work Decryption and Fastbootd.
+THIS FILE WAS TESTED AND WORK DECRYPTION AND FASTBOOTD.
 
 ## Build Instructions
 ```sh
