@@ -109,7 +109,7 @@ on property:twrp.decrypt.done=true
 on boot
     # Enable Power modes and set the CPU Freq Sampling rates
     write /proc/hps/enabled 0
-    chmod 0777 /sys/devices/system/cpu/cpu0/online
+    chmod 777 /sys/devices/system/cpu/cpu0/online
     write /sys/devices/system/cpu/cpu0/online 1
     write /sys/devices/system/cpu/cpu1/online 1
     write /sys/devices/system/cpu/cpu2/online 0
@@ -124,7 +124,7 @@ on boot
     write /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate 10900
     write /sys/devices/system/cpu/cpufreq/ondemand/powersave_bias 1
     write /sys/devices/system/cpu/cpufreq/ondemand/up_threshold 76
-    chmod 0444 /sys/devices/system/cpu/cpu0/online
+    chmod 444 /sys/devices/system/cpu/cpu0/online
     setprop recovery.perf.mode 0
 
 on property:recovery.perf.mode=1
